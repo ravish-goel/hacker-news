@@ -1,2 +1,1 @@
-import LineItem from './LineItem';
-export default LineItem;
+export { default } from './LineItem';

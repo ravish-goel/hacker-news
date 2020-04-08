@@ -27,7 +27,7 @@ class LineItem extends React.Component{
                 <p className={styles.index}>{this.props.index}.</p>
                 <p className={styles.comments}>{this.props.num_comments}</p>
                 <p className={styles.upvote}>{this.state.upvoteValue}</p>
-                <div onClick={(e)=>{this.upvote(this.props.objectID)}} className={styles.arrowUp}></div>
+                <a onClick={(e)=>{this.upvote(this.props.objectID)}} className={styles.arrowUp}></a>
                 <p>{this.props.title} <span className={styles.url}>({this.props.url}) by <strong className={styles.author}>{this.props.author}</strong> <TimeAgo date={this.props.created_at} /></span></p>
             </li>
         )
