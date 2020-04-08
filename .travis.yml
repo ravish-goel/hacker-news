@@ -4,6 +4,12 @@ node_js:
 cache:
   directories:
   - node_modules
+services:
+  - docker
+before_install:
+  - docker build -t ravish-goel/hacker-news .
+  - docker run -p 49160:3300 -d ravish-goel/hacker-news
+  - docker ps -a
 deploy:
   provider: heroku
   api_key:
