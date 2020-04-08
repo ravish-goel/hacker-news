@@ -8,3 +8,4 @@ deploy:
   provider: heroku
   api_key:
     secure: "8aa25171-249c-4614-862e-9a755859f7af"
+  app: hacken-news
