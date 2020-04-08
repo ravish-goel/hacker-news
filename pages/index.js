@@ -5,8 +5,8 @@ function Blog({ posts }) {
   const result = posts.hits.filter(post => post.title);
   return (
     <ol>
-      {result.map(post => (
-        <LineItem {...post}></LineItem>
+      {result.map((post, index)=> (
+        <LineItem {...post} index={index + 1}></LineItem>
       ))}
     </ol>
   )

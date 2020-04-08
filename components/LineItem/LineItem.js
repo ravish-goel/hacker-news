@@ -24,6 +24,7 @@ class LineItem extends React.Component{
     render(){
         return(
             <li className={styles.item}>
+                <p className={styles.index}>{this.props.index}.</p>
                 <p className={styles.comments}>{this.props.num_comments}</p>
                 <p className={styles.upvote}>{this.state.upvoteValue}</p>
                 <div onClick={(e)=>{this.upvote(this.props.objectID)}} className={styles.arrowUp}></div>

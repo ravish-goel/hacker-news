@@ -10,11 +10,12 @@
 }
 
 .comments {
-    width: 40px;
+    width: 30px;
 }
 
-.upvote {
-    width: 30px;
+.upvote, .index {
+    width: 20px;
+    font-weight: bold;
 }
 .url {
     font-size: 12px;
