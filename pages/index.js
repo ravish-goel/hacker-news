@@ -14,7 +14,7 @@ function Blog({ posts }) {
 
 
 export async function getStaticProps() {
-  const res = await fetch('https://hn.algolia.com/api/v1/search?query=')
+  const res = await fetch('https://hn.algolia.com/api/v1/search?query=', {})
   const posts = await res.json()
 
   return {

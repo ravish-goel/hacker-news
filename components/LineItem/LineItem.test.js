@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 import {shallow} from 'enzyme';
-import LineItem from '../components/LineItem/index';
+import LineItem from './LineItem';
 
 const data = [
     {
